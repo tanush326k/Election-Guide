@@ -41,24 +41,25 @@ A simulated conversational assistant that helps users learn voting procedures an
 
 ## 🧠 Architecture & Data Flow
 
+```## 🧠 Architecture & Data Flow
+
 ```mermaid
 graph TD
     A[index.html] -->|Loads UI Structure| B(DOM Elements)
-    
+
     C[styles.css] -->|Applies Glassmorphism & Theme| B
-    
+
     D[data.js] -->|Provides Content| E[app.js]
-    
+
     E -->|Renders Timeline Data| F[Timeline Section]
     E -->|Handles Flip Logic| G[Flashcards Section]
     E -->|Validates Answers| H[Quiz Section]
     E -->|Processes Queries| I[Chat Assistant]
-    
+
     B --- F
     B --- G
     B --- H
-    B --- I 
-
+    B --- I
 ## 💻 How to Run Locally
 
 ### 1. Clone the repository
