@@ -57,7 +57,7 @@ graph TD
     B --- F
     B --- G
     B --- H
-    B --- I
+    B --- I 
 
 ## 💻 How to Run Locally
 
