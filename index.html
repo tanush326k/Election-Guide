@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Election Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Election Guide</h1>
+        <p>Interactive assistant for the Indian Election Process</p>
+    </header>
+
+    <div class="container">
+        <!-- Interactive Chat -->
+        <section class="glass-panel" id="chat-section">
+            <h2>Election Assistant Chat</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will be appended here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Ask about 'EVM', 'timeline', or 'process'...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="glass-panel" id="timeline-section">
+            <h2>2024 Election Timeline</h2>
+            <ul class="timeline-list" id="timeline-list">
+                <!-- Timeline items will be generated here -->
+            </ul>
+        </section>
+
+        <!-- Flashcards -->
+        <section class="glass-panel" id="flashcard-section">
+            <h2>Learn Key Terms</h2>
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-front">
+                        <span id="flashcard-front-text">Term</span>
+                    </div>
+                    <div class="flashcard-back">
+                        <span id="flashcard-back-text">Definition</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-controls">
+                <button id="prev-card">Previous</button>
+                <button id="next-card">Next</button>
+            </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="glass-panel" id="quiz-section">
+            <h2>Test Your Knowledge</h2>
+            <div id="quiz-container">
+                <div class="quiz-question" id="quiz-question">Question goes here</div>
+                <div class="quiz-options" id="quiz-options">
+                    <!-- Options will be generated here -->
+                </div>
+                <div class="quiz-feedback" id="quiz-feedback"></div>
+                <button id="next-question" style="display: none;">Next Question</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Load data first, then logic -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
