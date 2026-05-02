@@ -33,17 +33,13 @@ A simulated conversational assistant that helps users learn voting procedures an
 
 ## 🛠️ Technology Stack
 
-The project is built using a lightweight and efficient frontend architecture:
-
-- **Frontend**: HTML5, CSS3 (Glassmorphism, Custom Variables, Animations), JavaScript (ES6+)
-- **Architecture**: Modular client-side design with separated logic and data layers
-- **Deployment**: Containerized using Docker and deployed via Google Cloud Run
+- **Frontend**: HTML5, CSS3 (Glassmorphism, Custom Variables, Animations), JavaScript (ES6+)  
+- **Architecture**: Modular client-side design with separated logic and data layers  
+- **Deployment**: Containerized using Docker and deployed via Google Cloud Run  
 
 ---
 
 ## 🧠 Architecture & Data Flow
-
-Below is a diagram illustrating the component structure and internal data flow of the application.
 
 ```mermaid
 graph TD
@@ -62,3 +58,44 @@ graph TD
     B --- G
     B --- H
     B --- I
+
+## 💻 How to Run Locally
+
+### 1. Clone the repository
+```bash id="c1g8qp"
+git clone https://github.com/tanush326k/Election-Guide.git
+
+## 🚀 Deployment (Google Cloud Run)
+
+To deploy this project on Google Cloud Run:
+
+### 1. Install Google Cloud SDK
+Ensure the Google Cloud SDK is installed and configured.
+
+---
+
+### 2. Authenticate
+```bash id="a1m9qp"
+gcloud auth login
+
+3. Deploy the application
+gcloud run deploy election-assistant --source . --region us-central1 --allow-unauthenticated --port 80
+
+80
+📜 License
+
+MIT License
+
+Copyright (c) 2026 Tanush
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+🎯 Project Goal
+
+This project aims to improve civic awareness by making election education interactive, visual, and easy to understand for all users.
