@@ -194,18 +194,6 @@ git clone https://github.com/tanush326k/Election-Guide.git
 cd Election-Guide
 ```
 
-## Launch
-
-Simply open **index.html** in your preferred browser.
-
-No package installation or build process is required.
-
----
-
-# 📸 Screenshots
-
-You can add screenshots here later.
-
 ```text
 docs/
 
